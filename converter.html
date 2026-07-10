@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit Converter</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-calculator"></i>
+            <h2>SmartCalc</h2>
+        </div>
+
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+            <li><a href="calculator.html"><i class="fa-solid fa-calculator"></i> Calculator</a></li>
+            <li><a href="scientific.html"><i class="fa-solid fa-square-root-variable"></i> Scientific</a></li>
+
+            <li class="active">
+                <a href="converter.html">
+                    <i class="fa-solid fa-repeat"></i>
+                    Converter
+                </a>
+            </li>
+
+            <li><a href="history.html"><i class="fa-solid fa-clock-rotate-left"></i> History</a></li>
+            <li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+        </ul>
+
+    </aside>
+
+    <main class="main-content">
+
+        <h1>Unit Converter</h1>
+        <p class="subtitle">
+            Convert Length, Weight & Temperature
+        </p>
+
+        <div class="converter-card">
+
+            <input type="number"
+            id="inputValue"
+            placeholder="Enter Value">
+
+            <select id="converterType">
+                <option value="m-km">Meter → Kilometer</option>
+                <option value="km-m">Kilometer → Meter</option>
+                <option value="g-kg">Gram → Kilogram</option>
+                <option value="kg-g">Kilogram → Gram</option>
+                <option value="c-f">Celsius → Fahrenheit</option>
+                <option value="f-c">Fahrenheit → Celsius</option>
+            </select>
+
+            <button onclick="convertValue()">
+                Convert
+            </button>
+
+            <div id="resultBox">
+                Result: -
+            </div>
+
+        </div>
+
+    </main>
+   
+</div>
+<footer class="footer">
+    <p> SmartCalc | Developed by Anish Yadav</p>
+</footer>
+
+<script src="js/converter.js"></script>
+
+</body>
+</html>

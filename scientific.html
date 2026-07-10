@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <i class="fa-solid fa-calculator"></i>
+                <h2>SmartCalc</h2>
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="calculator.html">
+                        <i class="fa-solid fa-calculator"></i>
+                        Calculator
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="scientific.html">
+                        <i class="fa-solid fa-square-root-variable"></i>
+                        Scientific
+                    </a>
+                </li>
+
+                <li>
+                    <a href="converter.html">
+                        <i class="fa-solid fa-repeat"></i>
+                        Converter
+                    </a>
+                </li>
+
+                <li>
+                    <a href="history.html">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        History
+                    </a>
+                </li>
+
+                <li>
+                    <a href="settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        Settings
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <h1>Scientific Calculator</h1>
+
+            <p class="subtitle">
+                Advanced Mathematical Calculator
+            </p>
+
+            <div class="calculator-box">
+
+                <input type="text" id="sciDisplay" value="0" readonly>
+
+                <div class="scientific-grid">
+
+                    <!-- Row 1 -->
+
+                    <button class="danger" onclick="clearDisplay()">AC</button>
+                    <button class="danger" onclick="deleteLast()">DEL</button>
+
+                    <button onclick="insertValue('(')">(</button>
+                    <button onclick="insertValue(')')">)</button>
+
+                    <button onclick="insertValue('%')">%</button>
+                    <button class="operator" onclick="insertValue('/')">÷</button>
+
+                    <!-- Row 2 -->
+
+                    <button onclick="insertValue('7')">7</button>
+                    <button onclick="insertValue('8')">8</button>
+                    <button onclick="insertValue('9')">9</button>
+
+                    <button onclick="pi()">π</button>
+                    <button onclick="eValue()">e</button>
+
+                    <button class="operator" onclick="insertValue('*')">×</button>
+
+                    <!-- Row 3 -->
+
+                    <button onclick="insertValue('4')">4</button>
+                    <button onclick="insertValue('5')">5</button>
+                    <button onclick="insertValue('6')">6</button>
+
+                    <button onclick="sqrt()">√</button>
+                    <button onclick="square()">x²</button>
+
+                    <button class="operator" onclick="insertValue('-')">−</button>
+
+                    <!-- Row 4 -->
+
+                    <button onclick="insertValue('1')">1</button>
+                    <button onclick="insertValue('2')">2</button>
+                    <button onclick="insertValue('3')">3</button>
+
+                    <button onclick="power()">xʸ</button>
+                    <button onclick="log()">log</button>
+
+                    <button class="operator" onclick="insertValue('+')">+</button>
+
+                    <!-- Row 5 -->
+
+                    <button class="zero" onclick="insertValue('0')">0</button>
+
+                    <button onclick="insertValue('.')">.</button>
+
+                    <button class="equal" onclick="calculate()">=</button>
+
+                    <button onclick="factorial()">n!</button>
+
+                    <!-- Row 6 -->
+
+                    <button onclick="sin()">sin</button>
+                    <button onclick="cos()">cos</button>
+                    <button onclick="tan()">tan</button>
+
+                    <button onclick="ln()">ln</button>
+
+                    <button onclick="insertValue('Math.PI')">π Value</button>
+
+                    <button onclick="insertValue('Math.E')">e Value</button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+    <footer class="footer">
+    <p> SmartCalc | Developed by Anish Yadav</p>
+</footer>
+
+    <!-- JavaScript Connection -->
+
+    <script src="js/scientific.js"></script>
+
+</body>
+
+</html>

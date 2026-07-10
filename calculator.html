@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+
+<link rel="stylesheet" href="/css/style.css">
+
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>SmartCalc</h2>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="calculator.html">
+                    <i class="fa-solid fa-calculator"></i>
+                    Calculator
+                </a>
+            </li>
+
+            <li>
+                <a href="scientific.html">
+                    <i class="fa-solid fa-square-root-variable"></i>
+                    Scientific
+                </a>
+            </li>
+
+            <li>
+                <a href="converter.html">
+                    <i class="fa-solid fa-repeat"></i>
+                    Converter
+                </a>
+            </li>
+
+            <li>
+                <a href="history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    History
+                </a>
+            </li>
+
+            <li>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main-content">
+
+        <h1>Standard Calculator</h1>
+
+        <div class="calculator-box">
+
+            <input
+                type="text"
+                id="display"
+                readonly
+            >
+
+            <div class="calc-grid">
+
+                <button onclick="clearDisplay()">AC</button>
+                <button onclick="deleteLast()">DEL</button>
+                <button onclick="append('%')">%</button>
+                <button onclick="append('/')">÷</button>
+
+                <button onclick="append('7')">7</button>
+                <button onclick="append('8')">8</button>
+                <button onclick="append('9')">9</button>
+                <button onclick="append('*')">×</button>
+
+                <button onclick="append('4')">4</button>
+                <button onclick="append('5')">5</button>
+                <button onclick="append('6')">6</button>
+                <button onclick="append('-')">−</button>
+
+                <button onclick="append('1')">1</button>
+                <button onclick="append('2')">2</button>
+                <button onclick="append('3')">3</button>
+                <button onclick="append('+')">+</button>
+
+                <button onclick="append('0')">0</button>
+                <button onclick="append('.')">.</button>
+
+                <button
+                    class="equal"
+                    onclick="calculate()"
+                >=</button>
+
+            </div>
+
+        </div>
+
+    </main>
+    
+</div>
+<footer class="footer">
+    <p> SmartCalc | Developed by Anish Yadav</p>
+</footer>
+
+<script src="/js/calculator.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>History</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-calculator"></i>
+            <h2>SmartCalc</h2>
+        </div>
+
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+            <li><a href="calculator.html"><i class="fa-solid fa-calculator"></i> Calculator</a></li>
+            <li><a href="scientific.html"><i class="fa-solid fa-square-root-variable"></i> Scientific</a></li>
+            <li><a href="converter.html"><i class="fa-solid fa-repeat"></i> Converter</a></li>
+
+            <li class="active">
+                <a href="history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    History
+                </a>
+            </li>
+
+            <li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+        </ul>
+
+    </aside>
+
+    <main class="main-content">
+
+        <h1>Calculation History</h1>
+
+        <p class="subtitle">
+            View all your previous calculations
+        </p>
+
+        <div class="history-card">
+
+            <div id="historyList"></div>
+
+            <button class="clear-btn"
+            onclick="clearHistory()">
+                Clear History
+            </button>
+
+        </div>
+
+    </main>
+    
+</div>
+<footer class="footer">
+    <p> SmartCalc | Developed by Anish Yadav</p>
+</footer>
+
+<script src="js/history.js"></script>
+
+</body>
+</html>
